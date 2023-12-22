@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Poppins:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #fff;
+}
+body .container {
+  border: 7px #ddd solid;
+  width: 320px;
+  height: 700px;
+  border-radius: 50px;
+  position: relative;
+  box-shadow: 0 0 45px #ddd;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+body .container .notsh {
+  z-index: 999;
+  width: 100px;
+  border-radius: 20px;
+  height: 27px;
+  background-color: #ddd;
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  margin-top: 10px;
+}
+body .container .mainContent {
+  transform: translateX(-7px);
+}
+body .container .content {
+  margin-top: 20%;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  flex-direction: column;
+}
+body .container .content .loginContainer {
+  position: absolute;
+  transform: translate(-100%);
+  top: 55px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body .container .content .loginContainer h3 {
+  margin-bottom: 20px;
+}
+body .container .content .loginContainer button {
+  margin-top: 10px;
+  width: 140px;
+  padding: 7px;
+  background-color: #333;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  outline: none;
+  border: 1px solid #333;
+}
+body .container .content .loginContainer .inputCon label {
+  display: block;
+}
+body .container .content .loginContainer .inputCon input {
+  width: 190px;
+  margin-bottom: 10px;
+  outline: none;
+  padding: 7px;
+  margin-top: 3px;
+  border: none;
+  border: 1px solid #555;
+}
+body .container .content header {
+  text-align: center;
+}
+body .container .content header .logo {
+  width: 20%;
+  margin: 20px 0 5px;
+}
+body .container .content header nav {
+  padding: 0 20px;
+  margin-top: -7px;
+}
+body .container .content header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .container .content header nav ul li {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+}
+body .container .content header nav ul li img {
+  width: 25px;
+}
+body .container .content header nav ul li span {
+  cursor: default;
+  margin-left: 5px;
+  font-size: 0.9em;
+}
+body .container .content aside .leftMenu {
+  z-index: 888;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 57px;
+  bottom: 0;
+  width: 55%;
+  transform: translate(-102%);
+  overflow: hidden;
+}
+body .container .content aside .leftMenu header .rotatedHeaderView {
+  background-color: #333;
+  width: 150%;
+  height: 30%;
+  border-radius: 30px;
+  transform: rotateZ(-20deg);
+  position: absolute;
+  left: -8%;
+  top: -15%;
+  box-shadow: 0 0 10px #333;
+}
+body .container .content aside .leftMenu header img {
+  width: 40px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  filter: invert(1);
+}
+body .container .content aside .leftMenu main {
+  position: absolute;
+  top: 30%;
+  height: 60%;
+  display: flex;
+  width: 100%;
+}
+body .container .content aside .leftMenu main ul {
+  cursor: pointer;
+}
+body .container .content aside .leftMenu main ul li {
+  width: 160px;
+  height: 36px;
+  border-radius: 5px;
+  margin-left: -7px;
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  list-style-type: none;
+  transition: 0.3s;
+}
+body .container .content aside .leftMenu main ul li img {
+  width: 18px;
+  margin-right: 8px;
+  margin-bottom: 2px;
+}
+body .container .content aside .leftMenu main ul li:hover {
+  background-color: #33333310;
+}
+body .container .content aside .leftMenu main ul li.active {
+  background-color: #33333310;
+}
+body .container .content aside .leftMenu main input {
+  position: absolute;
+  bottom: 10px;
+  width: 130px;
+  left: 24px;
+  height: 36px;
+  background-color: #333;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+body .container .content aside .cartContainer {
+  z-index: 888;
+  background-color: #f6f6f6;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 60%;
+  transform: translateY(120%);
+  border-radius: 30px 30px 0 0;
+  box-shadow: 0 0 30px #555;
+}
+body .container .content aside .cartContainer .arrowDropDown {
+  display: grid;
+  place-items: center;
+  border-bottom: 2px solid #ddd;
+  height: 30px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+body .container .content aside .cartContainer .arrowDropDown img {
+  width: 17px;
+  filter: invert(0.6);
+  transform: rotate(90deg);
+}
+body .container .content aside .cartContainer main .content {
+  margin-top: 10px;
+}
+body .container .content aside .cartContainer main .content .item {
+  margin: 7px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  background-color: #f8f7f7;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px #11111130;
+}
+body .container .content aside .cartContainer main .content .item .imgCon {
+  width: 70px;
+  height: 70px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+body .container .content aside .cartContainer main .content .item .imgCon img {
+  width: 40px;
+}
+body .container .content aside .cartContainer main .content .item .infoCon {
+  text-align: left;
+}
+body .container .content aside .cartContainer main .content .item .infoCon p {
+  margin: 0;
+  color: #666;
+  margin-bottom: -3px;
+}
+body .container .content aside .cartContainer main .content .item .infoCon h4 {
+  color: #666;
+  margin-bottom: -3px;
+}
+body .container .content aside .cartContainer main .content .item .itemCount {
+  margin-left: 70px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 6px;
+  position: relative;
+}
+body .container .content aside .cartContainer main .content .item .itemCount span {
+  cursor: pointer;
+}
+body .container .content aside .cartContainer main .content .item .itemCount span:first-child {
+  margin-bottom: 20px;
+}
+body .container .content aside .cartContainer main .content .item .itemCount span:nth-child(2) {
+  background-color: #ebebeb;
+  width: 100%;
+  position: absolute;
+  color: #333;
+  cursor: auto;
+}
+body .container .content aside .cartContainer main header {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+body .container .content aside .cartContainer main header h2 {
+  display: inline-block;
+}
+body .container .content aside .cartContainer main header .itemNumber {
+  display: inline-block;
+}
+body .container .content main {
+  padding: 0 15px 15px;
+  text-align: center;
+}
+body .container .content main .blurView {
+  z-index: 777;
+  position: absolute;
+  top: -7px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff00;
+  backdrop-filter: blur(0);
+  pointer-events: none;
+}
+body .container .content main .colorChooser {
+  cursor: pointer;
+  width: 100px;
+  height: 37px;
+  background-color: #aaa;
+  border-radius: 10px;
+  display: flex;
+  margin: 10px auto;
+  align-items: center;
+  justify-content: center;
+}
+body .container .content main .colorChooser div {
+  background-color: var(--bg);
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  border-radius: 50%;
+}
+body .container .content main .colorChooser div.active {
+  border: 3px solid #fff;
+}
+body .container .content main .imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+body .container .content main .imageContainer img {
+  width: 25px;
+  filter: contrast(0);
+  cursor: pointer;
+}
+body .container .content main .imageContainer #leftArrow.rotated {
+  opacity: 0;
+  transform: translate(10px) rotate(-180deg);
+}
+body .container .content main .imageContainer #rightArrow {
+  opacity: 0;
+  transform: translate(-10px);
+}
+body .container .content main .imageContainer .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .container .content main .imageContainer .inner img {
+  filter: contrast(1);
+  margin-right: 70px;
+  margin-left: 15px;
+  width: 90%;
+  cursor: auto;
+}
+body .container .content main p {
+  text-align: left;
+  margin: 10px 20px;
+}
+body .container .content main button {
+  background-image: linear-gradient(to right, #dc2424 0%, #4a569d 51%, #dc2424 100%);
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+body .container .content main button:hover {
+  background-position: right center;
+  color: #fff;
+}

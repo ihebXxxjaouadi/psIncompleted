@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="notsh"></div>
+      <div class="content">
+        <div class="loginContainer">
+          <h3>Login</h3>
+          <div class="inputCon">
+            <label for="">Sign in</label>
+            <input type="text">
+          </div>
+
+          <div class="inputCon">
+            <label for="">Password</label>
+            <input type="password">
+          </div>
+
+          <button>Login</button>
+        </div>
+        <div class="mainContent">
+          <header>
+            <nav>
+              <ul>
+                <li><img id="hamburgerMenu" src="./hamburger.png" alt="" />
+                  <span >Home</span>
+                </li>
+                <li><img id="cart" src="./shopping-bag.png" alt="" /></li>
+              </ul>
+            </nav>
+            <img class="logo" src="./logo.png" alt="" />
+          </header>
+
+          <main>
+            <div class="blurView"></div>
+            <div class="imageContainer">
+              <img class="rotated" id="leftArrow" src="./arrow.png" alt="" />
+
+              <div class="inner">
+                <img src="./white_hand.png" alt="" />
+                <img src="./black_hand.png" alt="" />
+                <img src="./purple_hand.png" alt="" />
+              </div>
+              <img src="./arrow.png" id="rightArrow" alt="" />
+            </div>
+            <div class="colorChooser">
+              <div id="white" class="active" style="--bg: #dce0e9"></div>
+              <div id="black" style="--bg: #121214"></div>
+              <div id="purple" style="--bg: #4a71c0"></div>
+            </div>
+            <h1>60$</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+              vel, adipisci odio amet vero impedit perspiciatis
+            </p>
+            <button>Add To Cart</button>
+          </main>
+        </div>
+
+        <aside>
+          <div class="leftMenu">
+            <header>
+              <div class="rotatedHeaderView"></div>
+              <img src="./logo.png" alt="">
+            </header>
+            <main>
+              <ul class="navButton">
+                <li class="active"> <img src="./user.png" alt=""> Profile</li>
+                <li> <img src="./home.png"+ alt=""> Home</li>
+                <li> <img src="./information.png" alt=""> About</li>
+              </ul>
+              <input type="button" value="Log in">
+            </main>
+          </div>
+          <div class="cartContainer">
+            <div class="arrowDropDown" id="hideCartBtn">
+              <img src="./arrow.png" alt="" />
+            </div>
+            <main>
+              <header>
+                <h2>Cart</h2>
+                <h4 class="itemNumber">(2)</h4>
+              </header>
+              <div class="content">
+                <div class="item">
+                  <div class="imgCon">
+                    <img src="./black_hand.png" alt="" />
+                  </div>
+
+                  <div class="infoCon">
+                    <h4>Black Hand</h4>
+                    <p>PS 5</p>
+
+                    <h3>60$</h3>
+                  </div>
+
+                  <div class="itemCount">
+                    <span>+</span>
+                    <span>1</span>
+                    <span>-</span>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="imgCon">
+                    <img src="./purple_hand.png" alt="" />
+                  </div>
+
+                  <div class="infoCon">
+                    <h4>Black Hand</h4>
+                    <p>PS 5</p>
+
+                    <h3>58$</h3>
+                  </div>
+
+                  <div class="itemCount">
+                    <span>+</span>
+                    <span>1</span>
+                    <span>-</span>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </aside>
+        <footer></footer>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
+      integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
